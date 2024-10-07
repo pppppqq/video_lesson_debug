@@ -2,7 +2,8 @@ from random import randint
 
 
 def division(divident, divisor):
-    return divident/divisor
+    if divisor != 0:
+        return divident/divisor
 
 
 if __name__ == '__main__':
@@ -11,3 +12,5 @@ if __name__ == '__main__':
         b = randint(-10, 10)
         result = division(a, b)
         print(result)
+        if result is None:
+            break
